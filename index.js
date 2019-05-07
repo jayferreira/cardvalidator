@@ -1,4 +1,4 @@
-function cardValidator(number){
+function cardValidator (number) {
   let cardNumber = number.toString().replace(/\D/g, '').split('').map(Number);
   if (cardNumber.length < 16 && cardNumber.length > 16 || cardNumber.every(digit => digit === cardNumber[0])) {
     return false;

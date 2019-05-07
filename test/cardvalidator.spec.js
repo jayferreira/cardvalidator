@@ -15,6 +15,13 @@ describe("Card Validation", () => {
     it("Should return invalid for shorter than 11 digits", () => {
         expect(card('111111')).to.equal(false);
     });
+    it("Should return invalid for invalid card numbers", () => {
+        expect(card('5253193799067538')).to.equal(false);
+    });   
+    it("Should return valid for 5253193799067539", () => {
+        expect(card('5253193799067539')).to.equal(true);
+    });
+    
    
 });
 

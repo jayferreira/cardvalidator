@@ -4,17 +4,19 @@
   "description": "Biblioteca que valida números de cartão de crédito",
   "main": "index.js",
   "directories": {
-    "test": "nyc mocha"
+    "test": "test"
   },
   "dependencies": {
-    "chai": "^4.2.0",
-    "nyc": "^14.1.0"
+    "chai": "^4.2.0"
+    
   },
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/jayferreira/cardvalidator/issues"
   },
-  "homepage": "https://github.com/jayferreira/cardvalidator#readme"
+  "homepage": "https://github.com/jayferreira/cardvalidator#readme",
+  "keywords": [
+    "card",
+    "validator"
+  ]
 }

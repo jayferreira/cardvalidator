@@ -1,6 +1,6 @@
-function cardValidator (stringCardNumber) {
-  let cardNumber = stringCardNumber.split('').map(Number);
-  if (cardNumber.length < 16 || cardNumber.length > 16 || cardNumber.every(digit => digit === cardNumber[0])) {
+function cardValidator(number){
+  let cardNumber = number.toString().replace(/\D/g, '').split('').map(Number);
+  if (cardNumber.length < 16 && cardNumber.length > 16 || cardNumber.every(digit => digit === cardNumber[0])) {
     return false;
   } 
   return luhnAlgorithm(cardNumber); 
@@ -25,8 +25,8 @@ function luhnAlgorithm (cardNumber) {
       newArray.push(value);
     }
   }
-  finalOperation(newArray, checkDigit);
-  return newArray;
+  return finalOperation(newArray, checkDigit);
+  
 }
    
 function finalOperation (newArray, checkDigit) {

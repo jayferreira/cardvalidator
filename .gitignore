@@ -1,4 +1,4 @@
 node_modules
 package-lock_json
-nyc_output
+.nyc_output
 

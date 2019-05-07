@@ -1,4 +1,4 @@
-# Validador de Cartão de Crédito 2.0.0
+# Validador de Cartão de Crédito 2.0.1
  
 
 **Esta biblioteca se destina à validação de números de cartões de crédito para uso em aplicações web.**
@@ -8,7 +8,7 @@ Na versão atual é capaz de verificar se um número de cartão fornecido é vá
 ## [](https://github.com/jayferreira/cardvalidator-#como-instalar)Como instalar:
 
 ```
-$ npm install cardvalidatorjf
+$ npm install cardValidatorjf
 ````
   
 
@@ -18,13 +18,13 @@ $ npm install cardvalidatorjf
 Exemplo de retorno válido:
 ```javascript
 const validator = require('cardvalidatorjf');
-validator.cardvalidator(5253193799067539) //true
+validator.cardValidator(5253193799067539) //true
 ````
 
 Exemplo de retorno inválido:
 ```javascript
 const validator = require('cardvalidatorjf');
-validator.cardvalidator(5253193799067538) //false
+validator.cardValidator(5253193799067538) //false
   ````
 
 ## [](https://github.com/jayferreira/cardvalidator#roadmap-oficial-do-projeto)Roadmap oficial do projeto

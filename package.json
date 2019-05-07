@@ -1,6 +1,6 @@
 {
   "name": "cardvalidatorjf",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Biblioteca que valida números de cartão de crédito",
   "main": "index.js",
   "directories": {
